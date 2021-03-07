@@ -62,9 +62,7 @@ for index in range(5):
 # Part. 4
 #=======================================
 # Print result
-#print(maxArray)
-newArray=sorted(maxArray)
-print(newArray)
+print(maxArray)
 #print(maxArray[1][0])
 #print(len(target_data))
 #========================================
