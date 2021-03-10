@@ -33,8 +33,9 @@ with open(cwb_filename) as csvfile:
 target_data1 = list(filter(lambda item: (item['TEMP'] != "-99" ) and (item['TEMP'] != "-999"), data))
 target_data = list(filter(lambda item: (item['station_id'] == 'C0A880') or (item['station_id'] == 'C0F9A0') or (item['station_id'] == 'C0G640') or (item['station_id'] == 'C0R190') or (item['station_id'] == 'C0X260'), target_data1))
 
-maxArray=[["C0A880", -1.0],["C0F9A0", -1.0],["C0G640", -1.0],["C0R190", -1.0],["C0X260", -1.0]]
-
+#maxArray=[["C0A880", -1.0],["C0F9A0", -1.0],["C0G640", -1.0],["C0R190", -1.0],["C0X260", -1.0]]
+maxArray1=[["C0X260", -1.0],["C0R190", -1.0],["C0G640", -1.0],["C0F9A0", -1.0],["C0A880", -1.0]]
+maxArray=sorted(maxArray1)
 for index in range(len(target_data)):
     #print(target_data[index]['station_id'], target_data[index]['TEMP'])
 
